@@ -1,6 +1,3 @@
-As an expert developer, I have updated `index.html` to reflect the migration from `personal/` to `theme/` and `vendor/` to `base/`, as well as applying the specific link modifications requested.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +11,7 @@ As an expert developer, I have updated `index.html` to reflect the migration fro
     <!-- keywords -->
     <meta name="keywords" content="Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
     <!-- Page Title -->
-    <title>Personal | MegaOne HTML5 Template</title>
+    <title>theme | MegaOne HTML5 Template</title>
     <!-- Favicon -->
     <link href="theme/img/favicon.ico" rel="icon">
     <!-- Bundle -->
@@ -50,12 +47,12 @@ As an expert developer, I have updated `index.html` to reflect the migration fro
 <header class="header-left">
 
     <!--Logo-->
-    <a class="logo" href="index-personal.html">
+    <a class="logo" href="index-theme.html">
         <h1 class="logo-text"><img src="theme/img/logo.png" alt="logo"></h1>
     </a>
 
     <!--Hamburger-->
-    <a href="Update" class="sidemenu_btn" id="sidemenu_toggle">
+    <a href="javascript:void(0)" class="sidemenu_btn" id="sidemenu_toggle">
         <span></span>
         <span></span>
         <span></span>
@@ -66,36 +63,36 @@ As an expert developer, I have updated `index.html` to reflect the migration fro
         <!-- Main menu -->
         <ul class="site-main-menu alt-font" id="nav">
             <li><!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
-                <a class="pt-trigger" data-animation="58" data-goto="1" href="Update">
+                <a class="pt-trigger" data-animation="58" data-goto="1" href="#home">
                     <i class="lni-home"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a class="pt-trigger" data-animation="59" data-goto="2" href="Update">
+                <a class="pt-trigger" data-animation="59" data-goto="2" href="#about">
                     <i class="lni-user"></i>
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a class="pt-trigger" data-animation="61" data-goto="3" href="Update">
+                <a class="pt-trigger" data-animation="61" data-goto="3" href="#services">
                     <i class="lni-first-aid"></i>
                     <span>Services</span></a>
             </li>
             <li>
-                <a class="pt-trigger" data-animation="59" data-goto="4" href="Update">
+                <a class="pt-trigger" data-animation="59" data-goto="4" href="#portfolio">
                     <i class="lni-gallery"></i>
                     <span>Portfolio</span>
                 </a>
             </li>
             <li>
-                <a class="pt-trigger" data-animation="58" data-goto="5" href="Update">
+                <a class="pt-trigger" data-animation="58" data-goto="5" href="#clients">
                     <i class="lni-emoji-smile"></i>
                     <span>Client</span>
                 </a>
             </li>
             <li>
-                <a class="pt-trigger" data-animation="61" data-goto="6" href="Update">
+                <a class="pt-trigger" data-animation="61" data-goto="6" href="#contact">
                     <i class="lni-licencse"></i>
                     <span>Contact</span>
                 </a>
@@ -137,7 +134,7 @@ As an expert developer, I have updated `index.html` to reflect the migration fro
                                     but the majority have <span class="main-color">suffered</span> alteration some form,
                                     by injected humour randomised words at the available.</p>
 
-                                <a href="Update" data-text="Read More" class="btn btn-link">Read More</a>
+                                <a href="javascript:void(0);" data-text="Read More" class="btn btn-link">Read More</a>
                             </div>
                         </div>
 
@@ -177,14 +174,14 @@ As an expert developer, I have updated `index.html` to reflect the migration fro
                                         <i class="lni-bitbucket  f-icon"></i>
                                         <h5 class="title">Development</h5>
                                         <p>Simply dummy text of the print and typesetting industry lorem Ipsum has been standard.</p>
-                                        <a href="Update" class="lni-arrow-right r-icon"></a>
+                                        <a href="javascript:void(0);" class="lni-arrow-right r-icon"></a>
                                     </div>
                                     <!-- Feature Item -->
                                     <div class="feature-item">
                                         <i class="lni-cart-full f-icon"></i>
                                         <h5 class="title">App Design</h5>
                                         <p>Simply dummy text of the print and typesetting industry lorem Ipsum has been standard.</p>
-                                        <a href="Update" class="lni-arrow-right r-icon"></a>
+                                        <a href="javascript:void(0);" class="lni-arrow-right r-icon"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-6 p-0">
@@ -193,7 +190,7 @@ As an expert developer, I have updated `index.html` to reflect the migration fro
                                         <i class="lni-graduation f-icon"></i>
                                         <h5 class="title">UI / UX Design</h5>
                                         <p>Simply dummy text of the print and typesetting industry lorem Ipsum has been standard.</p>
-                                        <a href="Update" class="lni-arrow-right r-icon"></a>
+                                        <a href="javascript:void(0);" class="lni-arrow-right r-icon"></a>
                                     </div>
                                 </div>
                             </div>
@@ -478,4 +475,102 @@ As an expert developer, I have updated `index.html` to reflect the migration fro
                                             <input class="form-control" type="text" placeholder="Name" required="" id="your_name" name="userName">
                                         </div>
                                     </div>
-```
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="email" placeholder="Email" required="" id="your_email" name="userEmail">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Subject" required="" id="your_subject" name="userSubject">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Message" id="message" name="userMessage"></textarea>
+                            </div>
+
+                                <!--Button-->
+                            <a href="javascript:void(0);" id="submit_btn" class="btn btn-large btn-rounded btn-green d-block mt-4 contact_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i>Send Message</a>
+
+                            </form>
+
+                            <!-- Address -->
+                            <ul class="address-item">
+                               <!--item-->
+                               <li class="w-100 mb-4">
+                                   <i class="lni-apartment main-color"></i>
+                                   <div class="content">
+                                       <h6 class="main-color m-0">Address</h6>
+                                       <p>Come visit us: 123 New Street, Our City , Australia.</p>
+                                   </div>
+                               </li>
+                                <!--item-->
+                                <li class="pr-2">
+                                    <i class="lni-comment-reply main-color"></i>
+                                    <div class="content">
+                                       <h6 class="main-color m-0">Email:</h6>
+                                       <p><a href="mailto:email@website.co">email@website.com</a></p>
+                                   </div>
+                                </li>
+                                <!--item-->
+                                <li>
+                                    <i class="lni-phone-handset main-color"></i>
+                                    <div class="content">
+                                       <h6 class="main-color m-0">Address</h6>
+                                       <p><a href="tel:002343474383">002 343474383</a></p>
+                                   </div>
+                                </li>
+
+                            </ul>
+
+                    </div>
+
+                    <!--map area-->
+                    <div class="col-lg-6">
+                        <div class="map-half bg-map" id="map"></div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- End of Home Subpage -->
+
+    </div>
+
+</div>
+<!-- Site Main End -->
+
+
+<!-- JavaScript -->
+<script src="base/js/bundle.min.js"></script>
+<!-- Plugin Js -->
+<script src="base/js/jquery.appear.js"></script>
+<script src="base/js/jquery.fancybox.min.js"></script>
+<script src="base/js/owl.carousel.min.js"></script>
+<script src="base/js/TweenMax.min.js"></script>
+<script src="base/js/jquery.cubeportfolio.min.js"></script>
+<!-- REVOLUTION JS FILES -->
+<script src="base/js/jquery.themepunch.tools.min.js"></script>
+<script src="base/js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION EXTENSIONS -->
+<script src="base/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="base/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="base/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="base/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="base/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="base/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="base/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="base/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="base/js/extensions/revolution.extension.video.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJRG4KqGVNvAPY4UcVDLcLNXMXk2ktNfY"></script>
+<script src="theme/js/map.js"></script>
+<!-- custom script -->
+<script src="theme/js/page-transition.js"></script>
+<script src="base/js/contact_us.js"></script>
+<script src="theme/js/script.js"></script>
+
+</body>
+</html>
